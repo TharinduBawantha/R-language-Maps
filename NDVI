@@ -1,0 +1,6 @@
+library(terra) 
+nir <- rast('Band5.tif') 
+red <- rast('Band4.tif') 
+ndvi<- (nir - red)/(nir + red) 
+
+plot(ndvi,axes=TRUE, col = rev(terrain.colors(20)), main = "NDVI", cex.axis = 0.5)
