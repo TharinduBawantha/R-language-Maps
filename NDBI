@@ -1,0 +1,16 @@
+# Load the packages
+library(terra)
+library(scico)
+
+# Load the bands
+swir <- rast('Band6.tif') 
+nir <- rast('Band5.tif') 
+
+# formula for Normalized Difference Built-Up Index
+ndbi <- (swir - nir) / (swir + nir) 
+
+# Define the color palette for the plot
+color_palette <- scico(20, palette = "hawaii")
+
+# Plot the NDBI
+plot(ndbi, axes = TRUE, col = color_palette, main = "NDBI", cex.axis = 0.5)
