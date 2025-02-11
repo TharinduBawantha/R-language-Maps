@@ -1,0 +1,13 @@
+# Load the packages
+library(terra)
+library(viridis)
+
+# Load the bands
+green <- rast('Band3.tif') 
+swir <- rast('Band6.tif') 
+
+#formula for Modified Normalized Difference Water Index (MNDWI)
+mndwi <- (green - swir) / (green + swir) 
+
+# Plot the NDVI
+plot(mndwi, axes = TRUE, col = cividis(20), main = "MNDWI", cex.axis = 0.5)
