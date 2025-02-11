@@ -1,0 +1,15 @@
+# Load the packages
+library(terra)
+
+# Load the Near-Infrared (NIR), Red, and Green bands
+nir_band <- rast('Band5.tif')
+red_band <- rast('Band4.tif')
+green_band <- rast('Band3.tif')
+
+# Stack the bands to create a composite image
+false_color_composite <- c(nir_band, red_band, green_band)
+
+# Plot the false color composite image with the title in the plot
+plotRGB(false_color_composite,stretch='lin',axes=TRUE,main='False Color Composite', mar=c(2,2,2,2)) 
+
+        
