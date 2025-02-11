@@ -1,0 +1,16 @@
+# Load the packages
+library(terra)
+library(scico)
+
+# Load the bands
+nir <- rast('Band5.tif')
+swir <- rast('Band6.tif') 
+
+#Formula for Normalized Difference Moisture Index (NDMI)
+ndmi <- (nir - swir) / (nir + swir)
+
+# Define the color palette for the plot
+color_palette <- scico(20, palette = "batlow")
+
+# Plot the NDMI
+plot(ndmi, axes = TRUE, col = color_palette, main = "NDMI", cex.axis = 0.5)
