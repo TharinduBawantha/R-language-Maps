@@ -1,6 +1,12 @@
+# Load the packages
 library(terra) 
+
+# Load the bands
 nir <- rast('Band5.tif') 
 red <- rast('Band4.tif') 
-ndvi<- (nir - red)/(nir + red) 
 
-plot(ndvi,axes=TRUE, col = rev(terrain.colors(20)), main = "NDVI", cex.axis = 0.5)
+# Formula for Normalized Difference Vegetation Index (NDVI)
+ndvi <- (nir - red) / (nir + red) # Compute the NDVI using the NIR and Red bands
+
+# Plot the NDVI 
+plot(ndvi, axes = TRUE, col = rev(terrain.colors(20)), main = "NDVI", cex.axis = 0.5) # Plot the NDVI with axes and a reversed terrain color palette
