@@ -1,0 +1,13 @@
+# Load the packages
+library(terra)
+
+# Load the Red, Green, and Blue bands
+red_band <- rast('Band4.tif')
+green_band <- rast('Band3.tif')
+blue_band <- rast('Band2.tif')
+
+# Stack the bands to create a composite image
+true_color_composite <- c(red_band, green_band, blue_band)
+
+# Plot the true color composite image
+plotRGB(true_color_composite, stretch = 'lin', axes = TRUE, main = 'True Color Composite', mar = c(2, 2, 2, 2))
