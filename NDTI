@@ -1,0 +1,16 @@
+# Load the packages
+library(terra) 
+library(scico)  
+
+# Load the bands
+swir1 <- rast('Band6.tif')  
+swir2 <- rast('Band7.tif')  
+
+# Calculate the Normalized Difference Tillage Index (NDTI)
+ndti <- (swir1 - swir2) / (swir1 + swir2)  
+
+# Define the color palette for the plot
+color_palette <- scico(20, palette = "batlow")  
+
+# Plot the NDTI
+plot(ndti, axes = TRUE, col = color_palette, main = "NDTI", cex.axis = 0.5) 
