@@ -5,3 +5,4 @@
 ![NDMI](https://github.com/user-attachments/assets/c715395b-1ad2-4da4-83f6-d7530018254e)
 ![NDBI](https://github.com/user-attachments/assets/f5088209-205b-4bc0-8c95-3aa509d36b4e)
 ![True Color Composite](https://github.com/user-attachments/assets/bf82d9cd-1275-4f85-982b-0118abf569ed)
+![False color composite](https://github.com/user-attachments/assets/1e8dd36c-6b70-4b58-ac0b-5eefe002df12)
