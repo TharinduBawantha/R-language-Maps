@@ -3,3 +3,4 @@
 ![MNDWI](https://github.com/user-attachments/assets/554f0eb0-85df-46ad-ba4a-46ac2f8a77af)
 ![NDTI](https://github.com/user-attachments/assets/20ef7fbd-94b2-49fb-8cbf-e0303406ae57)
 ![NDMI](https://github.com/user-attachments/assets/c715395b-1ad2-4da4-83f6-d7530018254e)
+![NDBI](https://github.com/user-attachments/assets/f5088209-205b-4bc0-8c95-3aa509d36b4e)
