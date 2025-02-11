@@ -1,0 +1,13 @@
+# Load the packages
+library(terra)
+library(viridis) 
+
+# Load the bands
+nir <- rast('Band5.tif') 
+green <- rast('Band3.tif') 
+
+# Formula for Normalized Difference Water Index (NWVI)
+ndwi <- (green - nir) / (nir + green) 
+
+# Plot the NDVI 
+plot(ndwi, axes = TRUE, col = viridis(20), main = "NDWI", cex.axis = 0.5)
