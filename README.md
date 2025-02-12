@@ -11,7 +11,7 @@ In Landsat 8-9, NDVI = (Band 5 – Band 4) / (Band 5 + Band 4)
 
        NDWI = (Green – NIR)/(Green + NIR)
 
-In Landsat 8-9, NDWI = (Band 5 - Band 6) / (Band 5 + Band 6)
+In Landsat 8-9, NDWI = (Band 3 - Band 5) / (Band 3 + Band 5)
 
 ![NDWI](https://github.com/user-attachments/assets/a0a71dcc-b449-45a0-b6bd-d0e9057d8e0c)
 
@@ -19,7 +19,7 @@ In Landsat 8-9, NDWI = (Band 5 - Band 6) / (Band 5 + Band 6)
 
        MNDWI = (Green - SWIR) / (Green + SWIR)
 
- In Landsat 8-9, MNDWI = (Band 3 - Band 6) / (Band 3 + Band 6
+ In Landsat 8-9, MNDWI = (Band 3 - Band 6) / (Band 3 + Band 6)
 
 ![MNDWI](https://github.com/user-attachments/assets/554f0eb0-85df-46ad-ba4a-46ac2f8a77af)
 
