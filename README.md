@@ -1,13 +1,18 @@
 
 1. **NDVI**
 
-NDVI = (NIR - R) / (NIR + R)
+       NDVI = (NIR - Red) / (NIR + Red)
 
 In Landsat 8-9, NDVI = (Band 5 – Band 4) / (Band 5 + Band 4)
 
 ![NDVI](https://github.com/user-attachments/assets/2fa13029-be0b-49d5-9b78-7a468caf4c0d)
 
-2. 
+2. **NDWI**
+
+       NDWI = (Green – NIR)/(Green + NIR)
+
+In Landsat 8-9, NDWI = (Band 5 - Band 6) / (Band 5 + Band 6)
+
 ![NDWI](https://github.com/user-attachments/assets/a0a71dcc-b449-45a0-b6bd-d0e9057d8e0c)
 ![MNDWI](https://github.com/user-attachments/assets/554f0eb0-85df-46ad-ba4a-46ac2f8a77af)
 ![NDTI](https://github.com/user-attachments/assets/20ef7fbd-94b2-49fb-8cbf-e0303406ae57)
